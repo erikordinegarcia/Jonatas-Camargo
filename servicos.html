@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Serviços Camargo Glass: sacadas, boxes, espelhos, janelas, portas, guarda-corpo, cobertura, fachada e divisórias de vidro."
+    />
+    <title>Serviços | Camargo Glass</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header header--compact" data-header>
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Camargo Glass - Página inicial">
+          <img class="brand__logo" src="img/logo-camargo-glass.jpg" alt="Logo Camargo Glass" />
+          <div class="brand__text">
+            <span class="brand__name">Camargo Glass</span>
+            <span class="brand__tag">Instalações de vidro em geral</span>
+          </div>
+        </a>
+
+        <nav class="nav" data-nav>
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link is-active" href="servicos.html">Serviços</a>
+          <a class="nav__link" href="projetos.html">Projetos</a>
+          <a class="nav__link" href="contato.html">Contato</a>
+        </nav>
+
+        <div class="header__actions">
+          <a
+            class="btn btn--primary"
+            target="_blank"
+            rel="noopener"
+            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o%20em%20vidro."
+          >
+            Solicitar orçamento
+          </a>
+
+          <button
+            class="menuBtn"
+            data-menu-btn
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span class="menuBtn__bar"></span>
+            <span class="menuBtn__bar"></span>
+            <span class="menuBtn__bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu" data-mobile-menu>
+        <div class="mobileMenu__inner container">
+          <a class="mobileMenu__link" href="index.html">Home</a>
+          <a class="mobileMenu__link is-active" href="servicos.html">Serviços</a>
+          <a class="mobileMenu__link" href="projetos.html">Projetos</a>
+          <a class="mobileMenu__link" href="contato.html">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="pageHero">
+        <div class="container pageHero__inner reveal">
+          <h1 class="pageHero__title">Serviços</h1>
+          <p class="pageHero__text">
+            Escolha o serviço e chame no WhatsApp. Projetos sob medida para residencial e comercial.
+          </p>
+
+          <div class="pageHero__cta">
+            <a
+              class="btn btn--primary"
+              target="_blank"
+              rel="noopener"
+              href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento.%20Servi%C3%A7o%3A%20%5B%5D.%20Bairro%3A%20%5B%5D."
+            >
+              Orçamento no WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="projetos.html">Ver projetos</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="grid grid--services">
+            <!-- Cada card aponta para um "detalhe" na mesma página (âncora) -->
+            <a class="serviceCard reveal" href="#envidracamento">
+              <div class="serviceCard__media">
+                <img src="img/sacada.jpg" alt="Envidraçamento de Sacada" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Envidraçamento de Sacada</h3>
+                <p>Conforto e proteção com visual moderno.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#articulada">
+              <div class="serviceCard__media">
+                <img src="img/sacada-articulada.jpg" alt="Sacada Articulada" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Sacada Articulada</h3>
+                <p>Abertura ampla, estética clean.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#espelhos">
+              <div class="serviceCard__media">
+                <img src="img/espelho.jpg" alt="Espelhos" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Espelhos</h3>
+                <p>Decorativo e sob medida.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#box">
+              <div class="serviceCard__media">
+                <img src="img/box.jpg" alt="Box de Vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Box de Vidro</h3>
+                <p>Segurança e acabamento premium.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#janela">
+              <div class="serviceCard__media">
+                <img src="img/janela.jpg" alt="Janela de Vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Janelas de Vidro</h3>
+                <p>Iluminação natural e isolamento.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#porta">
+              <div class="serviceCard__media">
+                <img src="img/porta.jpg" alt="Porta de Vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Portas de Vidro</h3>
+                <p>De correr ou de abrir.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#guarda-corpo">
+              <div class="serviceCard__media">
+                <img src="img/guarda-corpo.jpg" alt="Guarda-corpo" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Parapeito / Guarda-corpo</h3>
+                <p>Segurança com design atual.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#cobertura">
+              <div class="serviceCard__media">
+                <img src="img/cobertura.jpg" alt="Cobertura de vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Cobertura de Vidro</h3>
+                <p>Proteção e elegância.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#fachada">
+              <div class="serviceCard__media">
+                <img src="img/fachada.jpg" alt="Fachada de vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Fachada de Vidro</h3>
+                <p>Presença e sofisticação.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+
+            <a class="serviceCard reveal" href="#divisoria">
+              <div class="serviceCard__media">
+                <img src="img/divisoria.jpg" alt="Divisória de vidro" loading="lazy" />
+              </div>
+              <div class="serviceCard__body">
+                <h3>Divisória de Vidro</h3>
+                <p>Ambientes integrados e modernos.</p>
+                <span class="serviceCard__cta">Ver detalhes →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detalhes (SEO + conversão) -->
+      <section class="section section--soft">
+        <div class="container">
+          <h2 class="section__title reveal">Detalhes dos serviços</h2>
+
+          <div class="serviceDetails">
+            <article class="detail reveal" id="envidracamento">
+              <h3>Envidraçamento de Sacada</h3>
+              <p>
+                Ideal para ganhar conforto, reduzir vento/chuva e valorizar o imóvel, mantendo um
+                visual moderno.
+              </p>
+              <ul class="bullets">
+                <li>Opções de abertura conforme layout</li>
+                <li>Vedação e acabamento premium</li>
+                <li>Instalação com equipe especializada</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Envidra%C3%A7amento%20de%20Sacada.%20Bairro%3A%20%5B%5D.%20Vou%20enviar%20foto%20e%20medidas."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="articulada">
+              <h3>Sacada Articulada</h3>
+              <p>
+                Sistema com abertura ampla e visual limpo, perfeito para projetos arquitetônicos
+                premium.
+              </p>
+              <ul class="bullets">
+                <li>Mais amplitude de abertura</li>
+                <li>Design moderno com perfis</li>
+                <li>Alta durabilidade</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Sacada%20Articulada.%20Bairro%3A%20%5B%5D.%20Vou%20enviar%20foto%20e%20medidas."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="espelhos">
+              <h3>Espelhos</h3>
+              <p>
+                Espelhos sob medida para sala, banheiro, hall e áreas comerciais, com acabamento
+                refinado.
+              </p>
+              <ul class="bullets">
+                <li>Redondo, retangular e recortes especiais</li>
+                <li>Instalação precisa</li>
+                <li>Acabamento elegante</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Espelhos.%20Medidas%3A%20%5B%5D.%20Bairro%3A%20%5B%5D."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="box">
+              <h3>Box de Vidro</h3>
+              <p>
+                Modelos de correr ou abrir, com opções modernas (ferragens pretas, vidro
+                incolor/jateado).
+              </p>
+              <ul class="bullets">
+                <li>Vidro temperado</li>
+                <li>Ferragens premium</li>
+                <li>Acabamento e vedação</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Box%20de%20Vidro.%20Medidas%3A%20%5B%5D.%20Bairro%3A%20%5B%5D."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="janela">
+              <h3>Janelas de Vidro</h3>
+              <p>Janelas que valorizam a iluminação natural e melhoram o conforto do ambiente.</p>
+              <ul class="bullets">
+                <li>Sob medida</li>
+                <li>Perfis modernos</li>
+                <li>Ótimo acabamento</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Janelas%20de%20Vidro.%20Medidas%3A%20%5B%5D.%20Bairro%3A%20%5B%5D."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="porta">
+              <h3>Portas de Vidro (correr e abrir)</h3>
+              <p>
+                Portas elegantes para áreas internas/externas, com opções de vidro jateado e perfis
+                modernos.
+              </p>
+              <ul class="bullets">
+                <li>De correr ou de abrir</li>
+                <li>Vidro jateado/incolor</li>
+                <li>Ferragens e trilhos premium</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Porta%20de%20Vidro.%20Tipo%3A%20%5Bcorrer%2Fabrir%5D.%20Bairro%3A%20%5B%5D."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="guarda-corpo">
+              <h3>Parapeito / Guarda-corpo</h3>
+              <p>Segurança com estética moderna para escadas, sacadas e áreas elevadas.</p>
+              <ul class="bullets">
+                <li>Vidro laminado/temperado conforme projeto</li>
+                <li>Fixações e acabamentos modernos</li>
+                <li>Visual clean e sofisticado</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Guarda-corpo%2FParapeito.%20Local%3A%20%5Bescada%2Fsacada%5D.%20Bairro%3A%20%5B%5D."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="cobertura">
+              <h3>Cobertura de Vidro</h3>
+              <p>Proteção para áreas externas com alto padrão de acabamento e estrutura moderna.</p>
+              <ul class="bullets">
+                <li>Estrutura reforçada</li>
+                <li>Opções de vidro conforme necessidade</li>
+                <li>Instalação técnica</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Cobertura%20de%20Vidro.%20Bairro%3A%20%5B%5D.%20Vou%20enviar%20foto%20e%20medidas."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="fachada">
+              <h3>Fachada de Vidro</h3>
+              <p>
+                Perfeito para projetos comerciais e residenciais com impacto visual e iluminação
+                natural.
+              </p>
+              <ul class="bullets">
+                <li>Visual premium</li>
+                <li>Projeto sob medida</li>
+                <li>Execução com acabamento refinado</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Fachada%20de%20Vidro.%20Bairro%3A%20%5B%5D.%20Vou%20enviar%20foto%20e%20medidas."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+
+            <article class="detail reveal" id="divisoria">
+              <h3>Divisória de Vidro</h3>
+              <p>
+                Divisórias para escritório e ambientes residenciais, mantendo luminosidade e
+                integração.
+              </p>
+              <ul class="bullets">
+                <li>Vidro incolor/jateado</li>
+                <li>Estruturas modernas</li>
+                <li>Acabamento premium</li>
+              </ul>
+              <a
+                class="btn btn--primary"
+                target="_blank"
+                rel="noopener"
+                href="https://wa.me/5511999999999?text=Or%C3%A7amento%20-%20Divis%C3%B3ria%20de%20Vidro.%20Bairro%3A%20%5B%5D.%20Vou%20enviar%20foto%20e%20medidas."
+                >Orçar no WhatsApp</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__bottom">
+        <small>© <span data-year></span> Camargo Glass. Todos os direitos reservados.</small>
+      </div>
+    </footer>
+
+    <a
+      class="wppFloat"
+      target="_blank"
+      rel="noopener"
+      href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20vidro."
+      >WhatsApp</a
+    >
+  </body>
+</html>
