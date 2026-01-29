@@ -467,6 +467,26 @@ button {
   color: rgba(234, 240, 255, 0.92);
   font-weight: 800;
 }
+.serviceCard{
+  display:flex;
+  flex-direction:column;
+}
+
+.serviceCard__link{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  border-radius: inherit;
+}
+
+.serviceCard__budget{
+  margin-top:12px;
+  width:100%;
+  text-align:center;
+  padding:12px 14px;
+  border-radius:14px;
+}
+
 
 /* Gallery */
 .galleryItem {
@@ -729,11 +749,16 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.02);
 }
+.footer__copy{
+  font-size: 13px;
+  color: rgba(255,255,255,.55);
+}
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 16px;
-  padding-bottom: 16px;
+  grid-template-columns: 1fr 1fr; /* APENAS 2 COLUNAS */
+  gap: 48px;
+  padding: 40px 0;
+  align-items: start;
 }
 .footer__brand {
   display: flex;
@@ -754,25 +779,34 @@ button {
   max-width: 55ch;
 }
 .footer__title {
-  margin: 0 0 8px;
-  font-family: var(--fontTitle);
+  font-size:14px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color: rgba(255,255,255,.75);
+  margin-bottom:12px;
 }
 .footer__link {
-  display: block;
-  padding: 6px 0;
-  color: rgba(234, 240, 255, 0.88);
+  display:block;
+  padding:8px 10px;
+  border-radius:12px;
+  text-decoration:none;
+  color: rgba(255,255,255,.85);
+  transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 .footer__link:hover {
-  color: var(--text);
+  background: rgba(255,255,255,.06);
+  color:#fff;
+  transform: translateX(2px);
 }
 .footer__bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
+  text-align:center;
   gap: 12px;
   color: rgba(234, 240, 255, 0.8);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 14px;
+  padding-top:16px;
 }
 
 /* Lightbox */
@@ -852,6 +886,106 @@ button {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 
+/* Maps */
+/* COLE NO FINAL do style.css */
+
+/* grid 2 colunas (info + mapa) */
+.contactMap{
+  display:grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* card informações */
+.contactInfo{
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contactInfo__top{
+  font-size: 13px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.65);
+  margin-bottom: 10px;
+}
+
+.contactInfo__list{
+  display:flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.10);
+}
+
+.contactRow{
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+}
+
+.contactRow__icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  font-size: 16px;
+}
+
+.contactRow__title{
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.contactRow__value{
+  color: rgba(255,255,255,.75);
+  line-height: 1.35;
+}
+
+.contactRow__link{
+  color: rgba(255,255,255,.85);
+  text-decoration: none;
+}
+.contactRow__link:hover{
+  text-decoration: underline;
+}
+
+/* card do mapa (reaproveita o seu) */
+.mapCard{
+  height: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+.mapIframe{
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+/* responsivo */
+@media (max-width: 900px){
+  .contactMap{ grid-template-columns: 1fr; }
+  .mapIframe{ height: 340px; }
+}
+
+
 /* Utilities */
 .center {
   display: flex;
@@ -901,6 +1035,10 @@ button {
   .contactGrid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 640px){
+  .mapIframe{ height: 320px; }
 }
 
 @media (max-width: 560px) {
