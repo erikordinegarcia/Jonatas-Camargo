@@ -388,6 +388,9 @@ button {
 .section {
   padding: 64px 0;
 }
+.center.reveal {
+  margin-top: 20px;
+}
 .section--soft {
   background: rgba(255, 255, 255, 0.03);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
